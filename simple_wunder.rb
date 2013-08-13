@@ -1,6 +1,9 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'httparty'
+
 class WunderRequest
   include HTTParty
-  include Geocoder
 
   def self.temp(system = :c, location)
     if system == :c
@@ -22,4 +25,6 @@ class WunderRequest
     response(location)['current_observation']
   end
 end
+
+puts WunderRequest.response("Seattle")
 
