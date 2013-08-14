@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>State:</strong>
+  <%= @forecast.state %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @forecast.location %>
+</p>
+
+<p>
+  <strong>Temp:</strong>
+  <%= @forecast.temp %>
+</p>
+
+<%= link_to 'Edit', edit_forecast_path(@forecast) %> |
+<%= link_to 'Back', forecasts_path %>

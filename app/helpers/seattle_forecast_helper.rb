@@ -1,0 +1,2 @@
+module SeattleForecastHelper
+end

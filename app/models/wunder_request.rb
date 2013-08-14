@@ -1,6 +1,5 @@
 class WunderRequest
   include HTTParty
-  include Geocoder
 
   def self.temp(system = :c, location)
     if system == :c

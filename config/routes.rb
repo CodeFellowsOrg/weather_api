@@ -1,6 +1,9 @@
 WeatherApi::Application.routes.draw do
 
-  root :to => "forecast#index"
+  resources :forecasts
+  resources :seattle_forecast
+
+  root :to => "forecasts#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
