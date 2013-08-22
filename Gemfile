@@ -8,6 +8,7 @@ gem 'rails', '~> 4.0'
 gem 'sqlite3'
 gem 'httparty'
 gem 'geocoder'
+gem 'figaro'
 
 group :test, :development do
   gem "pry-rails"
