@@ -20,7 +20,7 @@ class WunderRequest
   def self.response(state, location)
     api_key = ENV["WUNDERAPI"]
     api_url = "http://api.wunderground.com/api/#{api_key}/geolookup/conditions/q/#{state}/#{location}.json"
-    binding.pry
+    puts api_url
     HTTParty.get(api_url)
   end
 
@@ -33,5 +33,5 @@ class WunderRequest
   end
 end
 
-ap WunderRequest.temp_f("Seattle")
+puts WunderRequest.temp_f("WA", "Seattle")
 
